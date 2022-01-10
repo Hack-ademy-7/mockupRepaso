@@ -11,13 +11,19 @@ body {
 }
 
 .textMain {
-    color: var(--mainColor);
+    color: var(--mainColor) !important;
 }
 
 .textSecond {
-    color: var(--secondColor);
+    color: var(--secondColor) !important;
+    
 }
 
 .textThird {
-    color: var(--thirdColor);
+    color: var(--thirdColor) !important;
+}
+
+.listaIconoMovil {
+    color: var(--mainColor) !important;
+    border: none;
 }
