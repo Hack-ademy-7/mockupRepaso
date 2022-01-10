@@ -1,0 +1,23 @@
+body {
+    font-family: 'Dosis', sans-serif;
+}
+
+:root {
+    
+    --mainColor : #0f53ff;
+    --secondColor : #5BD0F4;
+    --thirdColor : #2f2e41;
+    
+}
+
+.textMain {
+    color: var(--mainColor);
+}
+
+.textSecond {
+    color: var(--secondColor);
+}
+
+.textThird {
+    color: var(--thirdColor);
+}
