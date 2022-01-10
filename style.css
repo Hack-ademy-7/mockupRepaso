@@ -27,3 +27,81 @@ body {
     color: var(--mainColor) !important;
     border: none;
 }
+
+.head {
+    height: 100vh;
+    min-height: 500px;
+    width: 100vw;
+    background-image: linear-gradient(white, transparent, white), url(./media/head2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.btn-header {
+    background-color: var(--secondColor);
+    border-radius: 12px;
+    color: white;
+    padding: 5px 40px;
+    
+}
+
+.border-card {
+    border-left: 3px solid var(--secondColor) !important;
+}
+
+.border-img {
+    border-bottom: 3px solid var(--mainColor);
+        
+}
+
+.text-blur {
+    animation-name: focus-titulo;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+    animation-direction: both;
+}
+
+@keyframes focus-titulo {
+    0% {
+        filter: blur(20px);
+        opacity: 0;
+    }
+    100% {
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+
+.avatar {
+    border-radius: 50px;
+    border: solid 1px var(--secondColor);  
+    margin-left: 600px;
+}
+
+.icon {
+   display: flex;
+   justify-content: end;
+   position: absolute;
+   padding-left: 250px;
+   padding-top: 15px;
+   color: white;
+   
+}
+
+.reserva {
+    height: 40vh;
+    min-height: 200px;
+    width: 40vw;
+    min-width: 100vw;
+    background-image: linear-gradient(white, transparent, white), url(./media/head2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.textoReserva {
+    color: white;
+    text-shadow: 2px 2px 5px #080808;
+    font-size: 60px;    
+}
