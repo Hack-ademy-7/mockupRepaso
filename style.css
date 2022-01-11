@@ -52,7 +52,7 @@ body {
 
 .border-img {
     border-bottom: 3px solid var(--mainColor);
-        
+    
 }
 
 .text-blur {
@@ -76,29 +76,59 @@ body {
 .avatar {
     border-radius: 50px;
     border: solid 1px var(--secondColor);  
-    margin-left: 600px;
+    
 }
 
-.icon {
-   display: flex;
-   justify-content: end;
-   position: absolute;
-   padding-left: 250px;
-   padding-top: 15px;
-   color: white;
-   
+.btn-heart {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid var(--mainColor);
+    background-color: white;
+    position: absolute;
+    top: 10px;
+    right: 10px;   
 }
+
+.btn-heart:hover {
+    background-color: var(--mainColor);
+    transition: 0.2s;
+}
+
+.posicionFija {
+    position: sticky;
+    top: 80px;
+}
+
 
 .reserva {
-    height: 40vh;
-    min-height: 200px;
-    width: 40vw;
-    min-width: 100vw;
     background-image: linear-gradient(white, transparent, white), url(./media/head2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
+.textoQuote {
+    position: relative;
+}
+
+.textoQuote::before {
+    position: absolute;
+    content: open-quote;
+    font-size: 60px;
+    color: var(--secondColor);
+    top: -30px;
+    left: -20px;
+}
+
+.textoQuote::after {
+    position: absolute;
+    content: close-quote;
+    font-size: 60px;
+    color: var(--secondColor);
+    bottom: -35px;
+    right: -5px;
+}
+
 
 .textoReserva {
     color: white;
@@ -106,7 +136,7 @@ body {
     font-size: 60px;    
 }
 
-.btn {
+.btn-form {
     border-radius: 12px;
     border-color: var(--secondColor);
     background-color: var(--secondColor);
