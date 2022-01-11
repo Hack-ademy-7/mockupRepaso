@@ -105,3 +105,14 @@ body {
     text-shadow: 2px 2px 5px #080808;
     font-size: 60px;    
 }
+
+.btn {
+    border-radius: 12px;
+    border-color: var(--secondColor);
+    background-color: var(--secondColor);
+}
+
+footer {
+    
+    background-color: var(--thirdColor);
+}
