@@ -91,7 +91,9 @@
                             <div class="col-6">
                                 <h5 class="card-title fw-bold text-uppercase textMain">Subscription</h5>
                                 <p class="text-secondary small mb-0 mt-4">nuestros subscriptores</p>
-                                <p class="card-text fw-bold  h3">123</p>
+                                <p id="subData" class="card-text fw-bold  h3">
+                                    <!-- dato -->
+                                </p>
                                 
                             </div>
                             <div class="col-6">
@@ -103,7 +105,49 @@
                     
                 </div>
             </div>
-            
+            <div class="col-12 col-md-4 mb-3">
+                <div class="card border-0 shadow border-card p-3">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-6">
+                                <h5 class="card-title fw-bold text-uppercase textMain">Digital Nomados</h5>
+                                <p class="text-secondary small mb-0 mt-4">Trabajadores remotos</p>
+                                <p id="remotes" class="card-text fw-bold  h3">
+                                    <!-- dato -->
+                                </p>
+                                
+                            </div>
+                            <div class="col-6">
+                                <img src="./media/7.svg" class="w-75 d-block mx-auto" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+            <div class="col-12 col-md-4 mb-3">
+                <div class="card border-0 shadow border-card p-3">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-6">
+                                <h5 class="card-title fw-bold text-uppercase textMain">Freelancer</h5>
+                                <p class="text-secondary small mb-0 mt-4">trabajadores autonomos</p>
+                                <p id="freelancer" class="card-text fw-bold  h3">
+                                    <!-- dato -->
+                                </p>
+                                
+                            </div>
+                            <div class="col-6">
+                                <img src="./media/7.svg" class="w-75 d-block mx-auto" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+             
             
         </div>
     </div>
@@ -350,7 +394,26 @@
             
         })
         
+        let subData = document.querySelector('#subData');
+
+        let sumaSubscription = data.map(x => x.subscriptores).reduce((t,n) => t + n);
         
+        subData.textContent = sumaSubscription;
+
+        let freelancer = document.querySelector('#freelancer');
+
+        let sumaFreelancer = data.map(y => y.autonomos).reduce((t,n) => t + n);
+
+        freelancer.textContent = sumaFreelancer;
+        
+
+        let remotes = document.querySelector('#remotes');
+
+        let sumaRemotes = data.map(z => z.remotos).reduce((t,n) => t + n);
+
+        remotes.textContent = sumaRemotes;
+        
+
     </script>
 </body>
 </html>
