@@ -28,6 +28,12 @@ body {
     border: none;
 }
 
+.bg-nav-custom {
+    background-color: rgb(242, 242, 242);
+    box-shadow: -5px -5px 20px #fff, 5px 5px 20px #babecc;
+    transition: 0.4s all;
+}
+
 .head {
     height: 100vh;
     min-height: 500px;
@@ -143,6 +149,6 @@ body {
 }
 
 footer {
-    
     background-color: var(--thirdColor);
 }
+
