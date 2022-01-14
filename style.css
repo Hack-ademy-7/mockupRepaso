@@ -106,7 +106,6 @@ body {
     top: 80px;
 }
 
-
 .reserva {
     background-image: linear-gradient(white, transparent, white), url(./media/head2.jpg);
     background-repeat: no-repeat;
@@ -122,8 +121,8 @@ body {
     content: open-quote;
     font-size: 60px;
     color: var(--secondColor);
-    top: -30px;
-    left: -20px;
+    top: -25px;
+    left: -25px;
 }
 
 .textoQuote::after {
@@ -131,8 +130,8 @@ body {
     content: close-quote;
     font-size: 60px;
     color: var(--secondColor);
-    bottom: -35px;
-    right: -5px;
+    bottom: -50px;
+    right: -10px;
 }
 
 
@@ -144,7 +143,6 @@ body {
 
 .btn-form {
     border-radius: 12px;
-    border-color: var(--secondColor);
     background-color: var(--secondColor);
 }
 
